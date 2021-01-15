@@ -1,0 +1,17 @@
+D:\windowForm\BaiThucHanh\bin\Debug\BaiThucHanh.exe.config
+D:\windowForm\BaiThucHanh\bin\Debug\BaiThucHanh.exe
+D:\windowForm\BaiThucHanh\bin\Debug\BaiThucHanh.pdb
+D:\windowForm\BaiThucHanh\bin\Debug\EntityFramework.dll
+D:\windowForm\BaiThucHanh\bin\Debug\EntityFramework.SqlServer.dll
+D:\windowForm\BaiThucHanh\bin\Debug\EntityFramework.xml
+D:\windowForm\BaiThucHanh\bin\Debug\EntityFramework.SqlServer.xml
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.csprojAssemblyReference.cache
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.Properties.Resources.resources
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.csproj.GenerateResource.cache
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.csproj.CoreCompileInputs.cache
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.csproj.CopyComplete
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.exe
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.pdb
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.Form1.resources
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.View.DanhMuc.resources
+D:\windowForm\BaiThucHanh\obj\Debug\BaiThucHanh.View.SanPham.resources
