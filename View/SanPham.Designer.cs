@@ -125,21 +125,23 @@ namespace BaiThucHanh.View
             this.lstSanPham.TabIndex = 10;
             this.lstSanPham.UseCompatibleStateImageBehavior = false;
             this.lstSanPham.View = System.Windows.Forms.View.Details;
+            this.lstSanPham.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.lstSanPham_ItemSelectionChanged);
+            this.lstSanPham.SelectedIndexChanged += new System.EventHandler(this.lstSanPham_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
             this.columnHeader1.Text = "Số thứ tự";
-            this.columnHeader1.Width = 96;
+            this.columnHeader1.Width = 84;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Tên sản phẩm";
-            this.columnHeader2.Width = 192;
+            this.columnHeader2.Width = 132;
             // 
             // columnHeader3
             // 
             this.columnHeader3.Text = "Đơn giá";
-            this.columnHeader3.Width = 178;
+            this.columnHeader3.Width = 131;
             // 
             // columnHeader4
             // 
@@ -164,6 +166,7 @@ namespace BaiThucHanh.View
             this.btnXoa.TabIndex = 12;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -173,6 +176,7 @@ namespace BaiThucHanh.View
             this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // SanPham
             // 

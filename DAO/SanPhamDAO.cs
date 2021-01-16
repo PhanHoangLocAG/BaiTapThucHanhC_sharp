@@ -91,5 +91,69 @@ namespace BaiThucHanh.DAO
             }
             return lstsp;
         }
+
+
+        public List<sanpham> get_SanPham_Ma(int masp)
+        {
+            db_csharpEntities t = new db_csharpEntities();
+            var lst = (from sp in t.sanphams
+                       join dm in t.danhmucs on sp.madm equals dm.madm
+                       where sp.masp == masp
+                       select new { sp.masp, sp.tensp, sp.dongia, sp.danhmuc }
+                       ).ToList();
+            List<sanpham> lstsp = new List<sanpham>();
+            foreach (var a in lst)
+            {
+                sanpham sp = new sanpham();
+                sp.masp = a.masp;
+                sp.tensp = a.tensp;
+                sp.dongia = a.dongia;
+                sp.danhmuc = a.danhmuc;
+                lstsp.Add(sp);
+            }
+            return lstsp;
+        }
+
+        public List<sanpham> get_SanPham_Ten(string ten)
+        {
+            db_csharpEntities t = new db_csharpEntities();
+            var lst = (from sp in t.sanphams
+                       join dm in t.danhmucs on sp.madm equals dm.madm
+                       where (sp.tensp.Contains(ten))
+                       select new { sp.masp, sp.tensp, sp.dongia, sp.danhmuc }
+                       ).ToList();
+            List<sanpham> lstsp = new List<sanpham>();
+            foreach (var a in lst)
+            {
+                sanpham sp = new sanpham();
+                sp.masp = a.masp;
+                sp.tensp = a.tensp;
+                sp.dongia = a.dongia;
+                sp.danhmuc = a.danhmuc;
+                lstsp.Add(sp);
+            }
+            return lstsp;
+        }
+
+        public List<sanpham> get_SanPham_DanhMuc(string danh_muc)
+        {
+            db_csharpEntities t = new db_csharpEntities();
+            var lst = (from sp in t.sanphams
+                       join dm in t.danhmucs on sp.madm equals dm.madm
+                       where (dm.tendm.Contains(danh_muc))
+                       select new { sp.masp, sp.tensp, sp.dongia, sp.danhmuc }
+                       ).ToList();
+            List<sanpham> lstsp = new List<sanpham>();
+            foreach (var a in lst)
+            {
+                sanpham sp = new sanpham();
+                sp.masp = a.masp;
+                sp.tensp = a.tensp;
+                sp.dongia = a.dongia;
+                sp.danhmuc = a.danhmuc;
+                lstsp.Add(sp);
+            }
+            return lstsp;
+        }
     }
 }
